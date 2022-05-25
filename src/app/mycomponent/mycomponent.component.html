@@ -1,0 +1,74 @@
+<style>
+    #Outerbox
+    {
+      justify-content: center;
+    }
+    #card,#newcard,#newcard1
+    {
+      padding: 10px;
+      width: 500px;
+    }
+    </style>
+<div class="container" id="card">
+    <div style="text-align: center;">
+      <h4>Find Minimum Number</h4>
+    </div>
+    <div>
+      FirstNumber <input type ="number" [(ngModel)] = 'c' class="form-control">
+    </div>
+    <div>
+      SecondNumber <input type ="number" [(ngModel)] = 'd' class="form-control">
+    </div>
+    <div>
+      <p *ngIf = 'c<d' >
+        Minimum is {{c}} ..</p>
+        <p *ngIf = 'c>d' >
+        Minimum is {{d}} ..</p>
+    </div> 
+  </div>
+  <!---
+  <div class="container" id="newcard">
+      <div>
+          <h5>Checking array</h5>
+      </div>
+      <div>
+          <table class="table">
+              <thead>
+                <th>Array1</th>
+              </thead>
+              <tbody>
+                <tr *ngFor = "let a of array1">
+                    <td>{{a}}</td>
+                </tr>
+                <tr>
+                    <td  *ngFor = "let b of array2">{{b}}</td>
+                </tr>
+                <tr *ngFor = "let a of obj1">
+                    <td>{{a.Id}} {{ a.name }}</td>
+                </tr>
+              </tbody>
+          </table>
+      </div>
+    </div-->
+    <br>
+  <div class="container" id="newcard1">
+    <div>
+        <h5>Checking array</h5>
+    </div>
+    <div>
+        <table class="table">
+            <thead>
+              <th>Name</th>
+              <th>Place</th>
+              <th>Salary</th>
+            </thead>
+            <tbody>
+              <tr *ngFor = "let a of obj2">
+                  <td>{{a.name}}</td>
+                  <td> {{ a.place }}</td>
+                  <td>{{a.salary}}</td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

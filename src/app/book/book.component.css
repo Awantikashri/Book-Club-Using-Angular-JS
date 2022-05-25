@@ -1,0 +1,16 @@
+#page
+{
+    justify-content: center;
+}
+#Outerbox
+{
+    background-color: #8C78E8;
+    width: 750px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 100px;
+}
+.table
+{
+    background-color: #E5E0FA;
+}

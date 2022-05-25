@@ -1,0 +1,33 @@
+<style>
+    #Outerbox
+    {
+      justify-content: center;
+    }
+    #card
+    {
+      width: 500px;
+      padding: 20px;
+      border-radius: 20px;
+      margin-top: 100px;
+      margin-left: 100px;
+
+    }
+</style>
+    <div id="Outerbox">
+        <div id="card">
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text" id="username"  [(ngModel)]= 'usn'>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password"  [(ngModel)]= 'pwd'>
+                </div>
+                <div style="text-align: center;">
+                    <input type="button" value="click" (click)="check()">
+                </div>
+                <div>
+                    <h5>{{ usn }} {{msg}}</h5>
+                </div>
+    </div>
+</div>

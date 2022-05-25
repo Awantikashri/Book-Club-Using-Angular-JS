@@ -1,0 +1,43 @@
+<!--
+<div class="container" id="Outerbox">
+  <div class="container" id="card">
+    <div style="text-align: center;">
+      <h4>Find Maximum Number</h4>
+    </div>
+    <div>
+      FirstNumber <input type ="number" [(ngModel)] = 'a' class="form-control">
+    </div>
+    <div>
+      SecondNumber <input type ="number" [(ngModel)] = 'b' class="form-control">
+    </div>
+    <div>
+      <p *ngIf = 'a>b' >
+        Maximum is {{a}} ..</p>
+        <p *ngIf = 'b>a' >
+        Maximum is {{b}} ..</p>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<app-mycomponent></app-mycomponent>
+
+
+<app-book></app-book>
+<router-outlet></router-outlet>
+<app-login></app-login>
+-->
+
+<div id="heading">
+<h5>KLE BOOKS CLUB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a routerLink="/Home" routerLinkActive="active">Home</a>&nbsp;&nbsp;&nbsp;
+  <a routerLink="/top-10">Top 10 Books</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a routerLink="/login" routerLinkActive="active">Login</a>&nbsp;&nbsp;&nbsp;</h5>
+</div>
+<!--
+<div>
+  <ul>
+    <li><a routerLink="/Home" routerLinkActive="active">Home</a></li>
+    <li><a routerLink="/About">About</a></li>
+  </ul>
+</div>
+-->
+<router-outlet></router-outlet>
